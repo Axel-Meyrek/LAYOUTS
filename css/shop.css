@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'CutePixel';
+  src: url('../fonts/CutePixel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RunescapeUF';
+  src: url('../fonts/runescape_uf.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #E1D7FF;
+}
+
+
+img {
+    width: 100%;
+}
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #E1D7FF;
+    min-height: 100vh;
+}
+
+.shop_container {
+    position: relative;
+}
+
+.shop_assetTitle,.shop_assetButton {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.shop_title {
+    z-index: 10;
+    text-align: center;
+    position: relative;
+    font-family: "CutePixel";
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-size: clamp(1rem, -0.3125000000000002rem + 7.000000000000001vw, 1.875rem);
+    transform: translateY(-8px);
+}
+
+.shop_flex {
+    display: flex;
+    justify-content: center;
+    transform: translateY(20px);
+    z-index: 2;
+}
+
+.shop_navButton {
+    width: 100%;
+    background-image: url('../img/Tab_Unactive_Store.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.shop_navDescription {
+    text-align: center;
+    font-family: "RunescapeUF";
+    z-index: 10;
+    color: #342068;
+}
+
+.shop_containerItems {
+    padding: 2em;
+    display: flex;
+    border-radius: 4px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-image: url("../img/Store\ Background\ Frame.png");
+    background-position: center;
+    background-size: contain;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+}
+
+.shopItem {
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: calc(50% - 1em);
+    background-image: url(../img/Item\ Frame_Store.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    gap: 1em;
+}
+
+.shopItem_name {
+    font-family: "RunescapeUF";
+}
+
+.shopItem_button {
+    background-image: url("../img/Button_Store.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 50%;
+    border: none;
+    transform: translateY(-20px);
+}
+
+.shopItem_image {
+    width: 30%;
+    transform: translateY(20px);
+    z-index: 1;
+}
+
+
+.shopItem_button {
+    font-family: "CutePixel";
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+
+.intructions {
+    background-position: center;
+    background-repeat: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin: none;
+    background-color: red;
+}
+
+.intructions_title, .intructions_description {
+    text-align: center;
+    font-size: 14px;
+}
+
+.shopItem_coin {
+    width: 20%;
+}
