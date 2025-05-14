@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'CutePixel';
+  src: url('../fonts/CutePixel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RunescapeUF';
+  src: url('../fonts/runescape_uf.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #E1D7FF;
+}
+
+img {
+    width: 100%;
+}
+
+.rewards {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #E1D7FF;
+    min-height: 100vh;
+}
+
+.rewards_container {
+    position: relative;
+}
+
+.rewards_assetTitle {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.rewards_title {
+    z-index: 10;
+    text-align: center;
+    position: relative;
+    font-family: "CutePixel";
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-size: clamp(1rem, -0.3125000000000002rem + 7.000000000000001vw, 1.875rem);
+    transform: translateY(-8px);
+}
+
+.rewards_containerItems {
+    padding: 2em;
+    display: flex;
+    border-radius: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-image: url("../img/Store\ Background\ Frame.jpeg");
+    background-position: center;
+    background-size: contain;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    gap: 1em;
+}
+
+.rewardItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: calc(50% - 1em);
+    background-image: url(../img/Item\ Frame_Store.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    gap: 1em;
+    aspect-ratio: 1 / 1;
+}
+
+.rewardItem_image {
+    width: 30%;
+    transform: translateY(20px);
+    z-index: 1;
+}
+
+.rewardItem_name {
+    font-family: "RunescapeUF";
+    color: #342068;
+}
+
+.rewardItem_button {
+    background-image: url("../img/Button_Store.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 50%;
+    border: none;
+    transform: translateY(-20px);
+    font-family: "CutePixel";
+    color: white;
+    background-clip: border-box;
+    padding: .5em;
+} 

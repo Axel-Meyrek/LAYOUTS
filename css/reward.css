@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'CutePixel';
+  src: url('../fonts/CutePixel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RunescapeUF';
+  src: url('../fonts/runescape_uf.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #E1D7FF;
+}
+
+img {
+    width: 100%;
+}
+
+.reward_stella {
+    position: absolute;
+    scale: 0.8;
+}
+
+.reward {
+    position: relative;
+    padding: 0em 1em;
+    margin: 0 auto;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 90%;
+    overflow: hidden;
+    background-image: url("../img/Store\ Background\ Frame.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 500px;
+    align-items: center;
+}
+
+.reward_flex {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+}
+
+.reward_input {
+    background-image: url("../img/input.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.reward_text {
+    color: white;
+    font-family: "RunescapeUF";
+    text-align: center;
+    font-size: clamp(1rem, -0.3125000000000002rem + 7.000000000000001vw, 1.875rem);
+
+}
+
+.reward_exit {
+    max-width: 50px;
+    margin-right: 20px;
+    width: 10%;
+}
+
+.reward_image {
+    max-width: 40%;
+    transform: translateY(-10px);
+}
+
+.reward_button {
+    width: 60%;
+    background-image: url("../img/Button_Store.png");
+    background-size: contain;
+    padding: .5em;
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    font-family: "CutePixel";
+    font-size: clamp(0.875rem, 0.5rem + 2vw, 1.125rem);
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    z-index: 5;
+}
